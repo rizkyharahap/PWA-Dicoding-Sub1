@@ -1,16 +1,21 @@
 {
-    "name": "Mall Guide App",
-    "short_name": "Mall Guide",
-    "description": "Progresive Web Application for mall",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#ef5350",
-    "theme_color": "#ef5350",
-    "icons": [
-        {
-            "src": "icon.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "name": "Mall Guide App",
+  "short_name": "Mall Guide",
+  "description": "Progresive Web Application for mall",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ef5350",
+  "theme_color": "#ef5350",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
