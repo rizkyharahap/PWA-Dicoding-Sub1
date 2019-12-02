@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mall Guide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mall guide</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#cf6959">
+</head>
+
+<body>
+    <nav class="red lighten-1" role="navigation">
+        <div class="nav-wrapper">
+            <div class="valign-center">
+                <a href="#" class="brand-logo">Mall Guide</a>
+            </div>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav red darken-5" id="mobile-demo"></ul>
+        </div>
+    </nav>
+
+    <div class="container" id="body-content"></div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(function () {
+                        console.log("Service Worker registered");
+                    })
+                    .catch(function () {
+                        console.log("Service Worker registration failed");
+                    });
+            });
+        } else {
+            console.log("Service Worker not support on this browser");
+        }
+    </script>
+</body>
+
+</html>
